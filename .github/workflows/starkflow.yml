@@ -19,7 +19,7 @@ jobs:
 
       - name: Audit
         id: stark
-        uses: stark-contrast/accessibility-check-action@0.2.0-beta.0
+        uses: stark-contrast/accessibility-check-action@9ace173b6f375281cb0476995eae1fc672e193e4
         with:
             # Most of the following values are simply shell commands. You can use these to set up the container as needed for your app
             token: ${{ github.event.inputs.token }} # The action will use this to send an audit report back to Stark.

@@ -37,15 +37,5 @@ jobs:
           cleanup:
           wait_time: 5000 # [Required, default 5000] Milliseconds to wait before your app can start serving
           urls: |-
-            https://www.getstark.co
-            https://www.getstark.co/blog
-            https://www.getstark.co/library/
-            https://www.blockchain.com/
-            https://www.blockchain.com/pay
-            https://www.blockchain.com/en/institutional
-            https://nelsontreehouse.com/
-            https://nelsontreehouse.com/stay/
-            https://nelsontreehouse.com/about-us/our-crew/
-            https://store.beinatree.com/
-            https://store.beinatree.com/collections/merchandise
-            https://nelsontreehouse.com/learn/videos/
+            https://investor.vanguard.com/corporate-portal
+            https://investor.vanguard.com/home

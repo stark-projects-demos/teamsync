@@ -23,7 +23,7 @@ jobs:
 
       - name: Audit
         id: stark
-        uses: stark-contrast/accessibility-check-action@0.3.1-beta.0
+        uses: stark-contrast/accessibility-check-action@0.5.0-beta.1
         env:
           STARK_REPORT_URL: https://account.getstark.co/api/cli-webhooks/scan-result/:scanId
           STARK_COMPLETION_URL: https://account.getstark.co/api/cli-webhooks/end-scan/:scanId

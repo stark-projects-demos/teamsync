@@ -23,8 +23,9 @@ jobs:
 
       - name: Audit
         id: stark
-        uses: stark-contrast/accessibility-check-action@develop
+        uses: stark-contrast/accessibility-check-action@1.2.0
         env:
+          STARK_DETAILS_URL: https://account.getstark.co/api/cli-webhooks/scan-details/:scanId
           STARK_REPORT_URL: https://account.getstark.co/api/cli-webhooks/scan-result/:scanId
           STARK_COMPLETION_URL: https://account.getstark.co/api/cli-webhooks/end-scan/:scanId
         with:
@@ -34,7 +35,7 @@ jobs:
           setup: "npm i" # [Optional] Set up the container. Install some tools, export variables, etc.
           build: "npm run build" # [Optional] Build steps. Use && for multiple steps.
           serve: "npm run start" # [Optional] Tell us how to serve your app.
-          cleanup:
+          cleanup: ""
           wait_time: 5000 # [Required, default 5000] Milliseconds to wait before your app can start serving
           urls: |-
             http://localhost:3000

@@ -23,11 +23,11 @@ jobs:
 
       - name: Audit
         id: stark
-        uses: stark-contrast/accessibility-check-action@1.2.2
+        uses: stark-contrast/accessibility-check-action@2.0.0
         env:
-          STARK_DETAILS_URL: https://account.getstark.co/api/cli-webhooks/scan-details/:scanId
-          STARK_REPORT_URL: https://account.getstark.co/api/cli-webhooks/scan-result/:scanId
-          STARK_COMPLETION_URL: https://account.getstark.co/api/cli-webhooks/end-scan/:scanId
+          STARK_DETAILS_URL: https://app.getstark.co/api/cli-webhooks/scan-details/:scanId
+          STARK_REPORT_URL: https://app.getstark.co/api/cli-webhooks/scan-result/:scanId
+          STARK_COMPLETION_URL: https://app.getstark.co/api/cli-webhooks/end-scan/:scanId
         with:
           # Most of the following values are simply shell commands. You can use these to set up the container as needed for your app
           token: ${{ github.event.inputs.token }} # The action will use this to send an audit report back to Stark.

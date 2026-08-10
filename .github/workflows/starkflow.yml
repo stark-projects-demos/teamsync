@@ -19,11 +19,11 @@ jobs:
     steps:
       - name: Checkout code
         id: code-checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Audit
         id: stark
-        uses: stark-contrast/accessibility-check-action@2.0.0
+        uses: stark-contrast/accessibility-check-action@3.0.2
         env:
           STARK_DETAILS_URL: https://app.getstark.co/api/cli-webhooks/scan-details/:scanId
           STARK_REPORT_URL: https://app.getstark.co/api/cli-webhooks/scan-result/:scanId
